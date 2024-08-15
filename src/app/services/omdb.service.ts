@@ -15,4 +15,9 @@ export class OmdbService {
     const url = `${this.baseUrl}?s=${query}&apiKey=${this.apiKey}`;
     return this.http.get(url);
   }
+
+  getMovieDetails(id: string): Observable<any> {
+    const url = `${this.baseUrl}?i=${id}&apiKey=${this.apiKey}`;
+    return this.http.get(url);
+  }
 }
