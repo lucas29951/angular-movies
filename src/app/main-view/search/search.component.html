@@ -1,1 +1,20 @@
-<p>search works!</p>
+<div class="container mt-4">
+    <h1 class="text-center text-light">OMDb Movie Search</h1>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" [(ngModel)]="query" placeholder="Enter movie title...">
+      <div class="input-group-append">
+        <button class="btn btn-primary" (click)="search()">Search</button>
+      </div>
+    </div>
+  
+    <div *ngIf="movies.length > 0">
+      <h2>Results:</h2>
+      <ul class="list-group">
+        <li *ngFor="let movie of movies" class="list-group-item">
+          <img [src]="movie.Poster" alt="{{ movie.Title }}" width="50" class="me-3 border rounded-2">
+          <strong>{{ movie.Title }}</strong> ({{ movie.Year }})
+        </li>
+      </ul>
+    </div>
+  </div>
+  
