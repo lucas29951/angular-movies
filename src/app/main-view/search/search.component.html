@@ -2,9 +2,7 @@
     <h1 class="text-center text-light">OMDb Movie Search</h1>
     <div class="input-group mb-3">
       <input type="text" class="form-control" [(ngModel)]="query" placeholder="Enter movie title...">
-      <div class="input-group-append">
-        <button class="btn btn-primary" (click)="search()">Search</button>
-      </div>
+      <button class="btn btn-primary rounded-end-2" type="button" (click)="search()">Search</button>
     </div>
   
     <div *ngIf="movies.length > 0">
