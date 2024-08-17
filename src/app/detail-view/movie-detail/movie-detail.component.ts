@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 import { OmdbService } from '../../services/omdb.service';
 
 @Component({
@@ -12,7 +13,8 @@ export class MovieDetailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private omdbService: OmdbService
+    private omdbService: OmdbService,
+    private location: Location
   ) { }
 
   ngOnInit(): void {
@@ -22,6 +24,10 @@ export class MovieDetailComponent implements OnInit {
         this.movie = response;
       });
     }
+  }
+
+  goBack(): void {
+    this.location.back();
   }
 
 }
