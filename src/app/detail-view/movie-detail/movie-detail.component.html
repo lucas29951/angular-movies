@@ -1,6 +1,13 @@
-<div class="container mt-4" *ngIf="movie">
-    <button class="btn btn-outline-light mb-1" (click)="goBack()">← Back</button>
-    <h1>{{ movie.Title }}</h1>
+<div class="container" *ngIf="movie">
+    <div class="d-flex align-items-center mb-3">
+      <button class="btn text-light me-3" (click)="goBack()">
+        <i class="fa-solid fa-arrow-left-long fs-4"></i>
+      </button>
+      <h1 class="text-light me-2">{{ movie.Title }}</h1>
+      <button class="btn pb-3 fs-2" (click)="toggleFavorite()">
+        <i [class]="isFavorite ? 'fas fa-star' : 'far fa-star'" style="color: gold; font-size: 24px;"></i>
+      </button>
+    </div>
     <div class="row">
       <div class="col-md-4">
         <img [src]="movie.Poster" alt="{{ movie.Title }}" class="img-fluid rounded-3">
