@@ -1,17 +1,18 @@
 <div class="container mt-4" *ngIf="movie">
+    <button class="btn btn-outline-light mb-1" (click)="goBack()">← Back</button>
     <h1>{{ movie.Title }}</h1>
     <div class="row">
       <div class="col-md-4">
         <img [src]="movie.Poster" alt="{{ movie.Title }}" class="img-fluid rounded-3">
       </div>
-      <div class="col-md-8">
+      <div class="col-md-8 bg-dark" data-bs-theme="dark">
         <ul class="list-group">
-          <li class="list-group-item"><strong>Year:</strong> {{ movie.Year }}</li>
-          <li class="list-group-item"><strong>Genre:</strong> {{ movie.Genre }}</li>
-          <li class="list-group-item"><strong>Director:</strong> {{ movie.Director }}</li>
-          <li class="list-group-item"><strong>Plot:</strong> {{ movie.Plot }}</li>
-          <li class="list-group-item"><strong>Actors:</strong> {{ movie.Actors }}</li>
-          <li class="list-group-item"><strong>IMDB Rating:</strong> {{ movie.imdbRating }}</li>
+          <li class="list-group-item border border-0"><strong>Year:</strong> {{ movie.Year }}</li>
+          <li class="list-group-item border border-0"><strong>Genre:</strong> {{ movie.Genre }}</li>
+          <li class="list-group-item border border-0"><strong>Director:</strong> {{ movie.Director }}</li>
+          <li class="list-group-item border border-0"><strong>Plot:</strong> {{ movie.Plot }}</li>
+          <li class="list-group-item border border-0"><strong>Actors:</strong> {{ movie.Actors }}</li>
+          <li class="list-group-item border border-0"><strong>IMDB Rating:</strong> {{ movie.imdbRating }}</li>
         </ul>
       </div>
     </div>
