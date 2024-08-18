@@ -1,7 +1,7 @@
 <div class="container mt-4">
     <h1 class="text-center text-light">OMDb Movie Search</h1>
     <div class="input-group mb-1">
-      <input type="text" class="form-control" [(ngModel)]="query" placeholder="Enter movie title...">
+      <input type="text" class="form-control" [(ngModel)]="query" (keyup.enter)="search()" placeholder="Enter movie title...">
       <button class="btn btn-primary rounded-end-2" type="button" (click)="search()">
         <i class="fa-solid fa-magnifying-glass mx-1"></i>
       </button>
