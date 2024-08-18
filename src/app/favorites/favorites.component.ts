@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FavoritesComponent implements OnInit {
   favorites: any[] = [];
+  viewMode: 'list' | 'grid' = 'list';
 
   constructor() { }
 
@@ -21,5 +22,9 @@ export class FavoritesComponent implements OnInit {
   removeFavorite(id: string): void {
     this.favorites = this.favorites.filter(fav => fav.imdbID !== id);
     localStorage.setItem('favorites', JSON.stringify(this.favorites));
+  }
+
+  setViewMode(mode: 'list' | 'grid'): void {
+    this.viewMode = mode;
   }
 }
