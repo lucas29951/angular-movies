@@ -15,23 +15,27 @@
       <ul class="list-group mt-3">
         <li *ngFor="let movie of favorites" class="list-group-item d-flex justify-content-between align-items-center">
           <div>
-            <img [src]="movie.Poster" alt="{{ movie.Title }}" width="50" class="me-3 rounded-2">
-            <strong>{{ movie.Title }}</strong> ({{ movie.Year }})
+            <a class="link-light link-underline link-underline-opacity-0" [routerLink]="['/movie', movie.imdbID]">
+              <img [src]="movie.Poster" alt="{{ movie.Title }}" width="50" class="me-3 rounded-2">
+              <strong>{{ movie.Title }}</strong> ({{ movie.Year }})
+            </a>
           </div>
           <button class="btn btn-danger btn-sm" (click)="removeFavorite(movie.imdbID)">Remove</button>
         </li>
       </ul>
   </div>
 
-  <div *ngIf="viewMode === 'grid'" class="bg-dark" data-bs-theme="dark">
+  <div class="bg-dark" data-bs-theme="dark" *ngIf="favorites.length > 0 && viewMode === 'grid'; else noFavorites">
     <div class="row">
       <div class="col-md-4 mb-4" *ngFor="let movie of favorites">
-        <div class="card">
-          <img [src]="movie.Poster" class="card-img-top" alt="{{ movie.Title }}" width="50">
-          <div class="card-body">
-            <h5 class="card-title">{{ movie.Title }}</h5>
-            <p class="card-text">{{ movie.Year }}</p>
-          </div>
+        <div class="card w-75">
+          <a class="link-light link-underline link-underline-opacity-0" [routerLink]="['/movie', movie.imdbID]">
+            <img [src]="movie.Poster" class="card-img-top" alt="{{ movie.Title }}">
+            <div class="card-body">
+              <h5 class="card-title">{{ movie.Title }}</h5>
+              <p class="card-text">{{ movie.Year }}</p>
+            </div>
+          </a>
         </div>
       </div>
     </div>
