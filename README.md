@@ -12,7 +12,6 @@ Aplicacion web desarrollada en Angular que permite la busqueda y visualizacion d
 - [Objetivos del Proyecto](#objetivos-del-proyecto)
 - [Funcionalidades](#funcionalidades)
 - [Instalación](#instalación)
-- [Uso](#uso)
 - [API Utilizada](#api-utilizada)
 - [Contribución](#contribución)
 - [Licencia](#licencia)
@@ -94,3 +93,23 @@ A continuación, se presentan algunas capturas de pantalla que muestran diferent
 
 - Utiliza la carga asíncrona para obtener los datos de la API sin bloquear la interfaz de usuario.
 - Proporciona una experiencia de usuario fluida y sin interrupciones.
+
+## Instalación
+
+1. **Clonar el repositorio**
+   ```bash
+   git clone https://github.com/lucas29951/angular-movies.git
+
+2. **Navega al directorio del proyecto**
+   ```bash
+   cd angular-movie
+
+3. **Instala las dependencias**
+   ```bash
+   npm install
+
+4. **Ejecuta la aplicación**
+   ```bash
+   ng serve
+
+5. **Abre tu navegador y ve a `http://localhost:4200` para ver la aplicación en funcionamiento.**
