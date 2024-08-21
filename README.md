@@ -113,3 +113,57 @@ A continuación, se presentan algunas capturas de pantalla que muestran diferent
    ng serve
 
 5. **Abre tu navegador y ve a `http://localhost:4200` para ver la aplicación en funcionamiento.**
+
+## API Utilizada
+
+La aplicación utiliza la [OMDb API](https://www.omdbapi.com/) para obtener datos de películas, la cual requiere una API key para realizar las consultas.
+
+### ¿Qué es la OMDb API?
+
+La OMDb API (Open Movie Database API) es una interfaz de programación de aplicaciones que proporciona acceso a una extensa base de datos de información sobre películas, series de televisión y otros medios. Esta API permite a los desarrolladores obtener datos como títulos, sinopsis, elenco, directores, calificaciones, pósters y otros detalles relacionados con el mundo del entretenimiento.
+
+### ¿Para qué sirve?
+
+La OMDb API es ideal para aplicaciones que requieren información detallada sobre películas y series. Puedes usarla para:
+
+- Construir aplicaciones de búsqueda de películas y series.
+- Mostrar detalles de películas en sitios web o aplicaciones móviles.
+- Crear listas de películas basadas en diferentes criterios como género, director o año de lanzamiento.
+- Obtener datos para análisis o recomendaciones de contenido.
+
+### ¿Cómo usar la OMDb API?
+
+1. **Obtener una API Key:**
+   Para utilizar la OMDb API, primero necesitas registrarte en [el sitio web de OMDb](http://www.omdbapi.com/apikey.aspx) y obtener una clave de API (API Key). Esta clave es necesaria para realizar solicitudes a la API.
+
+2. **Realizar una solicitud:**
+   Con la API Key, puedes realizar solicitudes HTTP a la API para obtener datos sobre películas o series. Una solicitud básica podría verse así:
+
+   ```bash
+   http://www.omdbapi.com/?t=Inception&apikey=tu_api_key
+   ```
+
+   En este ejemplo, la solicitud busca la película "Inception". El parámetro `t` indica el título de la película, y `apikey` es donde debes incluir tu clave de API.
+
+3. **Procesar la respuesta:**
+   La API devolverá un JSON con la información solicitada. Por ejemplo, una respuesta puede incluir datos como el título, año de lanzamiento, director, actores, y más.
+
+   ```json
+   {
+     "Title": "Inception",
+     "Year": "2010",
+     "Rated": "PG-13",
+     "Released": "16 Jul 2010",
+     "Runtime": "148 min",
+     "Genre": "Action, Adventure, Sci-Fi",
+     "Director": "Christopher Nolan",
+     "Writer": "Christopher Nolan",
+     "Actors": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page, Tom Hardy",
+     "Plot": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+     ...
+   }
+   ```
+
+4. **Integrar los datos en tu aplicación:**
+   Los datos obtenidos de la OMDb API pueden ser utilizados en tu aplicación para mostrar información, generar listas, o cualquier otra funcionalidad relacionada con películas y series.
+
