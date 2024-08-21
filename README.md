@@ -10,6 +10,7 @@ Aplicacion web desarrollada en Angular que permite la busqueda y visualizacion d
 - [Capturas de Pantalla](#capturas-de-pantalla)
 - [Tecnologías Utilizadas](#tecnologías-utilizadas)
 - [Objetivos del Proyecto](#objetivos-del-proyecto)
+- [Funcionalidades](#funcionalidades)
 - [Instalación](#instalación)
 - [Uso](#uso)
 - [API Utilizada](#api-utilizada)
@@ -63,3 +64,33 @@ A continuación, se presentan algunas capturas de pantalla que muestran diferent
 - Aplicar conocimientos de Angular para construir una SPA (Single Page Application).
 - Integrar la API de OMDb para consumir y mostrar datos dinámicamente.
 - Crear una interfaz de usuario atractiva y fácil de usar.
+
+## Funcionalidades
+
+1. **Búsqueda de Películas:**
+
+- Permite a los usuarios buscar películas por título.
+- La búsqueda se activa al presionar Enter o al hacer clic en el botón de búsqueda.
+- Se muestran resultados relevantes basados en el término de búsqueda.
+
+2. **Vista de Detalles:**
+
+- Al hacer clic en un resultado de búsqueda, se muestra una vista detallada de la película seleccionada.
+- La vista incluye información como el título, la sinopsis, el año de lanzamiento, el director, el elenco, el género, la calificación, y un póster de la película.
+- Además de la información de la pelicula seleccionada, se permite al usuario marcar la pelicula como favorita con el icono de estrella que se encuentra a un lado del titulo de la misma.
+
+3. **Vista de Favoritos:**
+
+- Se muestran todas las peliculas que el usuario marco como favoritas, permitiendo almacenar un máximo de 15 peliculas.
+- Se incluye tambien la opción de modificar el tipo de visualización de dichas peliculas, alternando entre la vista de listado y vista de cuadricula.
+- Además permite al usuario eliminar alguna de las peliculas de favoritos.
+
+4. **Navegación Intuitiva:**
+
+- Incluye un botón para regresar desde la vista de detalles a los resultados de búsqueda.
+- Navegación rápida entre la página principal, resultados y detalles sin recargar la página.
+
+5. **Carga Asíncrona:**
+
+- Utiliza la carga asíncrona para obtener los datos de la API sin bloquear la interfaz de usuario.
+- Proporciona una experiencia de usuario fluida y sin interrupciones.
