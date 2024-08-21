@@ -8,9 +8,9 @@ Aplicacion web desarrollada en Angular que permite la busqueda y visualizacion d
 
 - [Características](#características)
 - [Capturas de Pantalla](#capturas-de-pantalla)
+- [Tecnologías Utilizadas](#tecnologías-utilizadas)
 - [Instalación](#instalación)
 - [Uso](#uso)
-- [Tecnologías Utilizadas](#tecnologías-utilizadas)
 - [API Utilizada](#api-utilizada)
 - [Objetivos del Proyecto](#objetivos-del-proyecto)
 - [Contribución](#contribución)
@@ -46,3 +46,11 @@ A continuación, se presentan algunas capturas de pantalla que muestran diferent
 ### Página de Favoritos - Vista en Modo Cuadricula
 
 ![Cuadricula de Favoritos](./src/assets/screenshots/movie-fav-grid.png)
+
+## Tecnologías Utilizadas
+
+- **Angular**: Framework utilizado para la construcción de la aplicación.
+- **TypeScript**: Lenguaje de programación utilizado en el desarrollo de la lógica de la aplicación.
+- **OMDb API**: API utilizada para obtener los datos de las películas.
+- **HTML5**: Estructura y contenido de la aplicación.
+- **CSS3**: Estilos y diseño de la interfaz de usuario.
