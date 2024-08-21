@@ -9,10 +9,10 @@ Aplicacion web desarrollada en Angular que permite la busqueda y visualizacion d
 - [Características](#características)
 - [Capturas de Pantalla](#capturas-de-pantalla)
 - [Tecnologías Utilizadas](#tecnologías-utilizadas)
+- [Objetivos del Proyecto](#objetivos-del-proyecto)
 - [Instalación](#instalación)
 - [Uso](#uso)
 - [API Utilizada](#api-utilizada)
-- [Objetivos del Proyecto](#objetivos-del-proyecto)
 - [Contribución](#contribución)
 - [Licencia](#licencia)
 
@@ -54,3 +54,12 @@ A continuación, se presentan algunas capturas de pantalla que muestran diferent
 - **OMDb API**: API utilizada para obtener los datos de las películas.
 - **HTML5**: Estructura y contenido de la aplicación.
 - **CSS3**: Estilos y diseño de la interfaz de usuario.
+- **Bootstrap**: Framework CSS para el diseño responsive.
+
+## Objetivos del Proyecto
+
+- Desarrollar una aplicación que permita a los usuarios buscar y explorar información sobre películas.
+- Implementar buenas prácticas en el desarrollo de aplicaciones Angular.
+- Aplicar conocimientos de Angular para construir una SPA (Single Page Application).
+- Integrar la API de OMDb para consumir y mostrar datos dinámicamente.
+- Crear una interfaz de usuario atractiva y fácil de usar.
