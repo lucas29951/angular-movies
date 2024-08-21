@@ -22,3 +22,27 @@ Aplicacion web desarrollada en Angular que permite la busqueda y visualizacion d
 - **Vista de detalles:** Visualiza información detallada de cada película, incluyendo sinopsis, director, elenco, año de lanzamiento, entre otros.
 - **Navegación fluida:** Navega entre los resultados de búsqueda y detalles de manera intuitiva y eficiente.
 - **Responsive design:** Diseño adaptable para garantizar una experiencia de usuario óptima en dispositivos móviles y de escritorio.
+
+## Capturas de Pantalla
+
+A continuación, se presentan algunas capturas de pantalla que muestran diferentes vistas y funcionalidades de la aplicación:
+
+### Página Principal
+
+![Página Principal](./src/assets/screenshots/angular-movie.png)
+
+### Resultados de Búsqueda
+
+![Resultados de Búsqueda](./src/assets/screenshots/angular-movie-search.png)
+
+### Detalles de la Película
+
+![Detalles de la Película](./src/assets/screenshots/angular-movie-detail.png)
+
+### Página de Favoritos - Vista en Modo Listado
+
+![Listado de Favoritos](./src/assets/screenshots/movie-fav-list.png)
+
+### Página de Favoritos - Vista en Modo Cuadricula
+
+![Cuadricula de Favoritos](./src/assets/screenshots/movie-fav-grid.png)
