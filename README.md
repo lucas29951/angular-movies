@@ -14,7 +14,6 @@ Aplicacion web desarrollada en Angular que permite la busqueda y visualizacion d
 - [Instalación](#instalación)
 - [API Utilizada](#api-utilizada)
 - [Contribución](#contribución)
-- [Licencia](#licencia)
 
 ## Características
 
@@ -167,3 +166,16 @@ La OMDb API es ideal para aplicaciones que requieren información detallada sobr
 4. **Integrar los datos en tu aplicación:**
    Los datos obtenidos de la OMDb API pueden ser utilizados en tu aplicación para mostrar información, generar listas, o cualquier otra funcionalidad relacionada con películas y series.
 
+## Contribución
+
+Si deseas contribuir a este proyecto, por favor sigue los siguientes pasos:
+
+- Realiza un fork del proyecto.
+- Crea una rama para tu función o corrección (git checkout -b feature/nueva-caracteristica).
+- Realiza tus cambios y haz commit de ellos (git commit -m 'Añadir nueva característica').
+- Sube tus cambios (git push origin feature/nueva-caracteristica).
+- Abre un `Pull Request`.
+
+---
+
+¡Gracias por visitar el repositorio de Angular Movies!
